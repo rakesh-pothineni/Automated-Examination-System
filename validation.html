@@ -1,0 +1,86 @@
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Registration Status</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/star-style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/form-static/css/util.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/form-static/css/main.css"
+    />
+    <!-- Javascript -->
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <!-- Body content -->
+  <body>
+    <div class="clouds">
+      <div class="row"></div>
+      <div class="row">
+        <div class="content">
+          <center>
+            <h4
+              class="tagline"
+              style="position: absolute; top: 100px; left: 300px;"
+            >
+              REGISTRATION &nbsp STATUS
+            </h4>
+          </center>
+        </div>
+      </div>
+
+      <center>
+        <div class="row3" style="position: absolute; top: 300px; left: 280px;">
+          <span class="MessageDisplay" style="color: white; font-size: 30px;">
+            {{result}}</span
+          >
+        </div>
+      </center>
+      <div style="position: absolute; top: 400px; left: 400px;">
+        <div class="container-contact1-form-btn">
+          <button class="contact1-form-btn" id="BackButton">
+            <span>Back<i class="" aria-hidden="true"></i></span>
+          </button>
+        </div>
+    </div>
+    <div style="position: absolute; top:400px; left:650px"> 
+        <div class="container-contact1-form-btn">
+          <button class="contact1-form-btn" id="HomeButton">
+            <span>Go to Home Page<i class="" aria-hidden="true"></i></span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- JavaScript -->
+<script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
+<script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/form-static/vendor/select2/select2.min.js"></script>
+<script src="../static/form-static/vendor/tilt/tilt.jquery.min.js"></script>
+<script>
+  document.getElementById("HomeButton").onclick = function () {
+    location.href = "/home";
+  };
+  document.getElementById("BackButton").onclick = function () {
+    location.href = "/register";
+  };
+</script>
+<script src="../static/js/main.js"></script>
